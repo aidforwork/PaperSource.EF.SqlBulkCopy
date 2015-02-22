@@ -44,7 +44,7 @@ namespace EFOptimization.Compare
 			{
 				var entities = context.Orders.ToList();
 
-				entities.ForEach(entity => entity.Date = DateTime.Now.AddYears(666));
+				entities.ForEach(entity => entity.Date = DateTime.Now.AddYears(100));
 
 				var stopwatch = new Stopwatch();
 				stopwatch.Start();
